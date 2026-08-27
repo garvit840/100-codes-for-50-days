@@ -1,27 +1,28 @@
 #include<stdio.h>
+
+#include<math.h>
 int main()
-{//Write a program that accepts a percentage (0-100) and assigns a grade based on the following criteria: 
 
+{
+    float a, b, c;
+    float d, root1, root2;
 
-    int percentage;
-    printf("enter percentage:");
-    scanf("%d", &percentage);
+    printf("enter a,b,c:");
+    scanf("%f %f %f", &a, &b, &c);
     
-    if(percentage>=90 && percentage<=100){
-        printf("Grade A");
+    d = b*b-4*a*c;
+
+    if(d>0){
+        root1= (-b - sqrt(d))/(2*a);
+        root2 = (-b + sqrt(d))/(2*a);
+        printf("roots are diff and real: %.2f %.2f", root1, root2);
     }
-    else if(percentage>=80 && percentage<=89){
-        printf("Grade B");
-    }
-    else if(percentage>=70 && percentage<=79 ){
-        printf("Grade C");
-    }
-    else if(percentage>=60 && percentage<=69){
-        printf("Grade D");
+    else if(d==0){
+        root1 = (-b/(2*a));
+        printf("roots are same and real:%.2f", root1);
     }
     else{
-        printf("Grade F");
+        printf("roots are complex");
     }
 return 0;
-
 }
