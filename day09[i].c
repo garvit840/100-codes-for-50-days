@@ -3,7 +3,7 @@
 #include<math.h>
 int main()
 
-{
+{//Write a program to find the roots of a quadratic equation and categorize them.
     float a, b, c;
     float d, root1, root2;
 

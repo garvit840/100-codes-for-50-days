@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main()
-{\\Write a program to input a year and check whether it is a leap year or not using conditional statements.
+{//Write a program to input a year and check whether it is a leap year or not using conditional statements.
 
     int year;
     printf("enter year:");
