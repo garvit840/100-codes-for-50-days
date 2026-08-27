@@ -1,22 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int a;
+    printf("enter a:");
+    scanf("%d", &a);
 
-    // Input an integer
-    printf("enter value of n:");
-    scanf("%d", &n);
-
-    // Check whether the number is positive, negative, or zero
-    if (n >= 0) {
-        if (n == 0) {
-            printf("Zero\n");
-        } else {
-            printf("Positive\n");
-        }
-    } else {
-        printf("Negative\n");
+    if(a%2==0  || a==0){
+        printf("a is a even no");
     }
-
-    return 0;
+    else
+    {
+        printf("a is odd no");
+    }
+return 0;   
 }
