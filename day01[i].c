@@ -1,15 +1,12 @@
-#include<stdio.h>
-int main()
-{ //Q1: Write a program to input two numbers and display their sum.
-    int a;
-    printf("enter a:");
-    scanf("%d", &a);
-
-    int b;
-    printf("enter b:");
-    scanf("%d", &b);
-    
-    int sum = a+b;
-    printf("sum of a and b is:%d", sum);
-    return 0;
+#include<Stdio.h>
+int main;
+{int n;
+printf("enter n:");
+scanf("%d", &n);
+ for(i=1;1<=n;i++){
+    if(i%2!=0){
+        printf("%d", i);
+    }
+ }
+return 0;
 }
