@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main() {//Write a program to check if a number is an Armstrong number.
     int num, original, digit, sum = 0;
 
     printf("Enter a number: ");

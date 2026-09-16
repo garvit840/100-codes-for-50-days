@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main()
-{
+{// Write a program to print all factors of a given number.
 
 int n,i;
 printf("enter n:");

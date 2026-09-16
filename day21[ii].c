@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main()
-{
+{//Write a program to check if a number is a perfect number.
     int num,i,sum=0;
     printf("enter num:");
     scanf("%d",&num);
