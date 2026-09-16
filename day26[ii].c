@@ -28,7 +28,7 @@ int main()
     for(j=1;j<=3;j++){
         printf("*\n");
     }
-    printf("/n")
+    printf("/n");
     printf("*");
 return 0;
 }

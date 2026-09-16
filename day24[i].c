@@ -1,11 +1,12 @@
 #include<stdio.h>
 int main()
-{//Write a program to print the following pattern:
+{/*Write a program to print the following pattern:
 *
 **
 ***
 ****
 *****
+*/
     int i;
     for(int i=1;i<=5;i++);
     {
