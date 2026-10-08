@@ -1,20 +1,20 @@
 #include<stdio.h>
-int main()
-{/*Write a program to print the following pattern:
-*****
- ****
-  ***
-   **
-    *
-    */
-    int i,j;
-    for(i=1;i<=5;i++)
-    {
-        for(j=5;j>=i;j--){
-            printf("*");
-        }
-        printf("\n");
-    }
 
-return 0;
+int main(){
+    int n[5];
+    printf("enter elements of array:");
+    for(int i=0;i<5;i++){
+        scanf("%d",&n[i]);
+    }
+    for(int i=0;i<5;i++){
+        printf("%d",n[i]);
+    }
+    return 0;
 }
+
+
+
+
+    
+  
+    
