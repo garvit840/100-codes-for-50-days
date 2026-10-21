@@ -3,29 +3,29 @@ int main(){
     int n;
     printf("enter n:");
     scanf("%d",&n);
-    int nsp=n/2;
-    int nst=1;
-    int ml=n/2+1;
-    for(int i=1;i<=n;i++){
-        
+    //n=4
+    int nsp=1;
+    int nst=n;
+    for(int i=1;i<=2*n+1;i++){
+        printf("%d",i);}
+    printf("\n");
+    for(int l=1;l<=n;l++){ 
+        int a=1;   
+        for(int k=1;k<=nst;k++){
+        printf("%d",a);
+        a++;
+        }
         for(int j=1;j<=nsp;j++){
             printf(" ");
-            
+            a++;
         }
-        
-        for(int k=1;k<=nst;k++){
-            printf("*");
-            
+        for(int g=1;g<=nst;g++){
+        printf("%d",a);
+        a++;
         }
-        if(i<ml){
-            nsp--;
-            nst+=2;
-        }
-        else{
-            nsp++;
-            nst-=2;
-        }
-           
+        nst--;
+        nsp+=2;
+    
         printf("\n");
     }
     
