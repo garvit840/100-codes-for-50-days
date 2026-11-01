@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main()
-{//— Check if two strings are Anagrams
+{//— Find the first repeating lowercase alphabet in a string.
     char s1[100], s2[100];
     int count[256] = {0};
     int i;

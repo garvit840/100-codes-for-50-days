@@ -13,7 +13,7 @@ int main()
         printf("num is a perfect number");
     }
     else{
-    printf("num is not a perfect number");
+        printf("num is not a perfect number");
     }
 return 0;
 }    
