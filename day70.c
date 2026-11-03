@@ -1,54 +1,28 @@
 
 #include <stdio.h>
+#include <ctype.h>
 
-int main() {//Take two sorted arrays of sizes m and n. Merge them into a third array that is also sorted.
-    int m, n, i, j, k;
+int main() {//Take a string as input and convert it to sentence case.
+    char str[200];
+    int i, start = 1;
 
-    scanf("%d", &m);
-    int a[m];
+    fgets(str, sizeof(str), stdin);
 
-    for(i = 0; i < m; i++) {
-        scanf("%d", &a[i]);
-    }
-
-    scanf("%d", &n);
-    int b[n], c[m+n];
-
-    for(i = 0; i < n; i++) {
-        scanf("%d", &b[i]);
-    }
-
-    i = 0;
-    j = 0;
-    k = 0;
-
-    while(i < m && j < n) {
-        if(a[i] <= b[j]) {
-            c[k] = a[i];
-            i++;
+    for(i = 0; str[i] != '\0'; i++) {
+        if(start == 1 && isalpha((unsigned char)str[i])) {
+            str[i] = toupper((unsigned char)str[i]);
+            start = 0;
         }
         else {
-            c[k] = b[j];
-            j++;
+            str[i] = tolower((unsigned char)str[i]);
         }
-        k++;
+
+        if(str[i] == '.' || str[i] == '!' || str[i] == '?') {
+            start = 1;
+        }
     }
 
-    while(i < m) {
-        c[k] = a[i];
-        i++;
-        k++;
-    }
-
-    while(j < n) {
-        c[k] = b[j];
-        j++;
-        k++;
-    }
-
-    for(i = 0; i < m+n; i++) {
-        printf("%d ", c[i]);
-    }
+    printf("%s", str);
 
     return 0;
 }
