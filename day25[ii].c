@@ -1,33 +1,22 @@
 #include<stdio.h>
-#include<limits.h>
+#include<string.h>
 int main(){
-    int n;
-    printf("enter n:");
-    scanf("%d",&n);
-    int a[n];
-    printf("enter array:");
-    for(int i=0;i<=n;i++){
-        scanf("%d",&a[i]);
-    }
-    int k;
-    printf("enter k:");
-    scanf("%d",&k);
-    for(int i=0;i<=k;i++){
-        int last=a[n-1];
-        for(int i=n-1;i>=0;i--){
-            a[i]=a[i-1];
-        }
-        a[0]=last;
+     typedef union member{
+        int a;
+        float b;
+        char ch[40];
+    } member;
 
-    }
-    for(int i=0;i<=n-1;i++){
-        printf("%d",a[i]);
-    }
-    
-
+    member y;
+    y.a=34;
+    y.b=3.34;
+    strcpy(y.ch,"garvit");
+    printf("%d\n",y.a);
+    printf("%.2f\n",y.b);
+    printf("%s",y.ch);
 
 
     
-      
-    return 0;
+    return 0; 
+
 }
